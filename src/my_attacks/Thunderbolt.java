@@ -4,16 +4,14 @@ import ru.ifmo.se.pokemon.*;
 
 import java.util.Random;
 
-public class ThunderPunch extends PhysicalMove {
-    public ThunderPunch() {
-        super(Type.ELECTRIC, 75, 100);
+public class Thunderbolt extends SpecialMove {
+    public Thunderbolt(){
+        super(Type.ELECTRIC, 90, 100);
     }
-
     @Override
     protected String describe() {
-        return "использует Громовой Удар";
+        return "использует Молниеносный Удар";
     }
-
     @Override
     public void applyOppEffects(Pokemon pokemon) {
         Random random = new Random();
